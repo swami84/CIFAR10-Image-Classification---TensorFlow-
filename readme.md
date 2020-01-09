@@ -50,3 +50,37 @@ After training the model we achieved a validation accuracy ~ 50%.
 
 ![Image 4](https://github.com/swami84/CIFAR10-Image-Classification---TensorFlow-/blob/master/Data/Images/Norm_Heatmap_CNN_Model.jpg)
 
+
+## Convolutional NN Model
+
+
+Our model
+
+`
+cnn_model = keras.models.Sequential([
+    DefaultConv2D(filters=64, kernel_size=3, input_shape=[32, 32, 3]),
+    keras.layers.MaxPooling2D(pool_size=2),
+    DefaultConv2D(filters=128),
+    DefaultConv2D(filters=128),
+    keras.layers.MaxPooling2D(pool_size=2),
+    DefaultConv2D(filters=256),
+    DefaultConv2D(filters=256),
+    keras.layers.MaxPooling2D(pool_size=2),
+    keras.layers.Flatten(),
+    keras.layers.Dense(units=128, activation='relu'),
+    keras.layers.Dense(units=64, activation='relu'),
+    keras.layers.Dense(units=10, activation='softmax'),
+])
+` 
+
+We huilt a 
+
+* The first layer uses 64  filters (4 × 4) but no stride because the input images are not very large. It also sets the input_shape=[32, 32, 3]
+
+* Next we have a max pooling layer which uses a pool size of 2, so it divides each spatial dimension by a factor of 2.
+
+* Then we repeat the same structure twice: two convolutional layers followed by a max pooling layer. For larger images, we could repeat this structure several more times (the number of repetitions is a hyperparameter that can be tuned).
+
+* The number of filters increases from 64 to 128 and then to 256 as we progress through the CNN toward the output layer. This filter enhancement is required since the number of low-level features is  fairly low.
+
+* We also further add dropout regularization (10%) after each fully connected dense layers
