@@ -15,8 +15,8 @@ We will first look at a perceptual model which takes the smallest delta between 
 
 1.We will first create a random image and then create a typical image for each class using the smallest perpetual delta
 
-<p align="center">
-  <img src="https://github.com/swami84/NYC-Yellow-Cab-Clustering-for-Carpool/blob/master/Images/3D%20Surface%20plot_Size_Distance_Distortion_fit.jpg" />
+<p align="left">
+  <img src="https://github.com/swami84/CIFAR10-Image-Classification---TensorFlow-/blob/master/Data/Images/Random_Image.jpg" />
 </p>
 
 
