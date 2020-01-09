@@ -56,9 +56,10 @@ After training the model we achieved a validation accuracy ~ 50%.
 
 Our model
 
-`
+~~~~
 cnn_model = keras.models.Sequential([
     DefaultConv2D(filters=64, kernel_size=3, input_shape=[32, 32, 3]),
+	
     keras.layers.MaxPooling2D(pool_size=2),
 	
     DefaultConv2D(filters=128),
@@ -82,9 +83,8 @@ cnn_model = keras.models.Sequential([
     keras.layers.Dense(units=10, activation='softmax'),
 	
 ])
-` 
+~~~~
 
-We huilt a 
 
 * The first layer uses 64  filters (4 × 4) but no stride because the input images are not very large. It also sets the input_shape=[32, 32, 3]
 
@@ -94,4 +94,4 @@ We huilt a
 
 * The number of filters increases from 64 to 128 and then to 256 as we progress through the CNN toward the output layer. This filter enhancement is required since the number of low-level features is  fairly low.
 
-* We also further add dropout regularization (10%) after each fully connected dense layers
+
