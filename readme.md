@@ -60,16 +60,27 @@ Our model
 cnn_model = keras.models.Sequential([
     DefaultConv2D(filters=64, kernel_size=3, input_shape=[32, 32, 3]),
     keras.layers.MaxPooling2D(pool_size=2),
+	
     DefaultConv2D(filters=128),
+	
     DefaultConv2D(filters=128),
+	
     keras.layers.MaxPooling2D(pool_size=2),
+	
     DefaultConv2D(filters=256),
+	
     DefaultConv2D(filters=256),
+	
     keras.layers.MaxPooling2D(pool_size=2),
+	
     keras.layers.Flatten(),
+	
     keras.layers.Dense(units=128, activation='relu'),
+	
     keras.layers.Dense(units=64, activation='relu'),
+	
     keras.layers.Dense(units=10, activation='softmax'),
+	
 ])
 ` 
 
