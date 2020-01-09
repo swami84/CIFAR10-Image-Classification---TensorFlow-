@@ -17,6 +17,7 @@ We will first look at a perceptual model which takes the smallest delta between 
 
 <p align="left">
   <img src="https://github.com/swami84/CIFAR10-Image-Classification---TensorFlow-/blob/master/Data/Images/Random_Image.jpg" />
+  ------------------------------------->
 </p>
 
 
