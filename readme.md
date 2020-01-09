@@ -15,8 +15,8 @@ We will first look at a perceptual model which takes the smallest delta between 
 
 1.We will first create a random image and then create a typical image for each class using the smallest perpetual delta
 
-<p align="left">  <img src="https://github.com/swami84/CIFAR10-Image-Classification---TensorFlow-/blob/master/Data/Images/Random_Image.jpg"  >-------------------------------------></p>
-
+<p align="left">  <img src="https://github.com/swami84/CIFAR10-Image-Classification---TensorFlow-/blob/master/Data/Images/Random_Image.jpg"  ></p>
+<p align="right">  <img src="https://github.com/swami84/CIFAR10-Image-Classification---TensorFlow-/blob/master/Data/Images/Random_Image.jpg"  ></p>
 
 2.The second step will be to make predictions on the test set based on the closest "typical" image trained in the first step.
 
