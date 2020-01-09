@@ -26,7 +26,7 @@ While some typical images such as horse, deer have some resemblence most of the 
 
 ![Image 1](https://github.com/swami84/CIFAR10-Image-Classification---TensorFlow-/blob/master/Data/Images/Typical_Images_All_Classes.jpg)
 
-### Smallest Delta Model Summary
+### Smallest Delta Model Results
 
 * **Smallest Delta Model reaches an accuracy of ~ 29%**
 * **Large % of misclassifications between all image classes**
@@ -42,7 +42,7 @@ After training the model we achieved a validation accuracy ~ 50%.
 
 ![Image 3](https://github.com/swami84/CIFAR10-Image-Classification---TensorFlow-/blob/master/Data/Images/History_FC_Model.jpg)
 
-### Fully-connected Model Summary
+### Fully-connected Model Results
 
 * **After training with 20 epochs, we get an accuracy of ~50%. Obtained accuracy with NN approach much higher than delta model (which was ~ 28%)**
 * **We still see many animals misclassified as dogs,birds. Model is also failing at dog-cat distinction**
@@ -84,7 +84,7 @@ cnn_model = keras.models.Sequential([
 
 ![Image 5](https://github.com/swami84/CIFAR10-Image-Classification---TensorFlow-/blob/master/Data/Images/History_CNN_Model.jpg)
 
-### CNN Model Summary
+### CNN Model Results
 
 * **After training with 10 epochs, we get an accuracy of ~75%, significant improvement over our FC-NN model**
 
@@ -98,14 +98,22 @@ train a network to make predictions from the output of the trained network.
 
 ![Image 6](https://github.com/swami84/CIFAR10-Image-Classification---TensorFlow-/blob/master/Data/Images/History_TL_Model.jpg)
 
-## TL Model Results
+### TL Model Results
  
-
 
 * **After training with 10 epochs, we get an accuracy of ~85%, significant improvement over our CNN model**
 
 * **While most animal missclassification supressed, Dog-cat misclassifications still equivalent to CNN model**
 
+# Summary
+
+Model|Accuracy (%)
+---|---
+Smallest Delta Model|28.8
+Fully Connected NN Model|50.7
+Convolutional NN Model|75.9
+Transfer Learning Model|84.0
+![Image 7](https://github.com/swami84/CIFAR10-Image-Classification---TensorFlow-/blob/master/Data/Images/Heatmap_Comparison.jpg)
 
 
 
